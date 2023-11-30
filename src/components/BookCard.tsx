@@ -57,10 +57,10 @@ const BookCard: React.FC<BookDetail> = ({
         <p className="mt-1 text-sm font-light pb-2">{author}</p>
         <p className="mb-3 text-xs text-gray-700flex flex-row items-center gap-2">
           <FaList fontSize="15px" />
-          {currentChapter}
+          {currentChapter} {""}
           {chapterName}
         </p>
-        <p className="mb-3 text-xs text-gray-700flex flex-row items-center gap-2">
+        <p className="mb-3 text-xs text-gray-700flex flex-row items-center gap-2 ">
           <FaBookmark fontSize="15px" />
           {bookmarkDate} / {bookmarkTime}
         </p>

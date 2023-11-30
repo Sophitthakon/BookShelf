@@ -2,7 +2,7 @@ import { useState } from "react";
 import BookCard from "../components/BookCard";
 import MockData from "../mockdata/MockData";
 import { useBookStore } from "../store/bookStore";
-import Corousel from "../components/Corousel";
+import Carousel from "../components/Corousel";
 
 function App() {
   const { books, delete: deleteBooks } = useBookStore();
@@ -32,7 +32,7 @@ function App() {
   return (
     <>
       <div className="pb-10">
-        <Corousel />
+        <Carousel />
       </div>
 
       <div className="max-w-[1024px] mx-auto mb-5">
