@@ -33,14 +33,14 @@ const BookCard: React.FC<BookDetail> = ({
   const isSelected = selectedBook.includes(id);
   return (
     <div
-      className="bg-white flex flex-row gap-2 overflow-hidden border-neutral-600 border-[1px] rounded-md cursor-pointer"
+      className="bg-white flex flex-row gap-2 overflow-hidden rounded-md cursor-pointer"
       onClick={() => handleSelect(id)}
     >
       <img className="h-full w-32 rounded-lg" src={picture} />
 
       <div className="w-full p-4">
         <div className="flex flex-row justify-between item-center">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+          <h5 className=" text-base font-bold tracking-tight text-gray-900">
             {name}
           </h5>
 
@@ -54,15 +54,15 @@ const BookCard: React.FC<BookDetail> = ({
             ) : null}
           </div>
         </div>
-        <p className="mt-1 font-light ">{author}</p>
-        <p className="mb-3 font-normal text-gray-700flex flex-row items-center gap-2">
-          <FaList fontSize="20px" />
+        <p className="mt-1 text-sm font-light pb-2">{author}</p>
+        <p className="mb-3 text-xs text-gray-700flex flex-row items-center gap-2">
+          <FaList fontSize="15px" />
           {currentChapter}
           {chapterName}
         </p>
-        <p className="mb-3 font-normal text-gray-700flex flex-row items-center gap-2">
-          <FaBookmark />
-          {bookmarkDate}/{bookmarkTime}
+        <p className="mb-3 text-xs text-gray-700flex flex-row items-center gap-2">
+          <FaBookmark fontSize="15px" />
+          {bookmarkDate} / {bookmarkTime}
         </p>
       </div>
     </div>
